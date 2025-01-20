@@ -1,0 +1,304 @@
+body {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    zoom: 100%;
+    
+}
+.alice-regular {
+    font-family: "Alice", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.top-nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #7F1112, #BB312D);
+    height: 86px;
+    padding: 0 20px;
+}
+
+.logo {
+    position: relative;
+    bottom: 10px;
+    top:5px;
+}
+
+.navbar {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+    margin-left: 30%;
+}
+
+.navbar h6 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.navbar h6 a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar h6 a:hover {
+    text-decoration: underline;
+}
+
+.top-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#cbox {
+    display: none;
+}
+
+.top-nav label {
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+@media (min-width: 1200px) {
+    body {
+        zoom: 150%;
+    }
+}
+@media (max-width: 768px) {
+    .menu-bar {
+        display: none; /* Hidden by default */
+        flex-direction: column;
+        background: white;
+        position: absolute;
+        top: 86px;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        padding: 10px;
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #cbox:checked ~ .menu-bar {
+        display: flex; /* Shown when the checkbox is checked */
+    }
+
+    .navbar h6 {
+        padding: 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar h6 a {
+        color: black;
+    }
+
+    .top-right {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .top-nav label {
+        display: block; /* Show the label for the hamburger menu */
+    }
+
+    .logo {
+        bottom: 0;
+    }
+}
+@media (max-width:1000px) {
+    .container{
+        margin-left: 40px;
+        display: flex;
+    }    
+}
+.ban-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.banner-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Remove unwanted margin */
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.8);
+}
+
+.discount-text {
+    font-size: calc(2rem + 1vw);
+    font-weight: bold;
+}
+
+.offer-text {
+    font-size: calc(1.5rem + 0.8vw);
+}
+
+
+.ban-container img{
+    display: block;  /* Keep the image as a block element */
+    width: 100%;
+}
+.text-overlay {
+    position: absolute; /* Position text over the image */
+    top: 50%; 
+    left: 20%; 
+    transform: translate(-50%, -50%); /* Perfect centering */
+    color: white; 
+    font-size: 50px; 
+    font-weight: bold; 
+    text-align: center; /* Center-align text */
+}
+.text-overlay p {
+    line-height: 1.3; /* Sets the spacing between lines */
+    margin: 0; /* Optional: remove the default margins */
+}
+.products p{
+    font-size: 30px;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.outdoors{
+    width: 200px;
+}
+.outdoors p{
+    text-align: center;
+    font-size: 20px;
+}
+#outdoor-bag{
+    border: 3px solid #BB312D;
+    width: 100%;
+    border-radius: 5px;
+}
+.backpacks{
+    width: 200px;
+}
+.backpacks p{
+    text-align: center;
+    font-size: 20px;
+}
+#back-bag{
+    border: 3px solid #BB312D;
+    width: 100%;
+    border-radius: 5px;
+}
+.luggage{
+    width: 200px;
+}
+.luggage p{
+    text-align: center;
+    font-size: 20px;
+}
+#luggage{
+    border: 3px solid #BB312D;
+    width: 100%;
+    border-radius: 5px;
+}
+.duffles{
+    width: 200px;
+}
+.duffles p{
+    text-align: center;
+    font-size: 20px;
+}
+#duffles{
+    border: 3px solid #BB312D;
+    width: 100%;
+    border-radius: 5px;
+}
+.belts{
+    width: 200px;
+}
+.belts p{
+    text-align: center;
+    font-size: 20px;
+}
+#belts{
+    border: 3px solid #BB312D;
+    width: 100%;
+    border-radius: 5px;
+}
+.wallets{
+    width: 200px;
+}
+.wallets p{
+    text-align: center;
+    font-size: 20px;
+}
+#wallets{
+    border: 3px solid #BB312D;
+    width: 100%;
+    border-radius: 5px;
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    padding-left: 130px;
+    text-align: center;
+}
+.overlay-text {
+    color: white;
+    font-weight: bold;
+}
+.position-relative img {
+    height: 250px;
+    object-fit: cover;
+}
+.card-container {
+    margin-top: 30px;
+}
+.card-overlay {
+    position: relative;
+    height: 100%;
+}
+.card-overlay img {
+    width: 100%;
+    height: 100%;
+}
+.overlay-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Subtle shadow */
+}
+.text-uppercase a{
+    text-decoration: none;
+}
+.text-uppercase a:hover{
+    text-decoration: underline;
+}
+.detail{
+    width: 60vw;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
